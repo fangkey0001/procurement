@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import ProcurementLayout from "@/components/procurement/ProcurementLayout";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -11,7 +10,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Progress } from "@/components/ui/progress";
-import { Separator } from "@/components/ui/separator";
 import { 
   DollarSign, 
   Plus, 
@@ -19,20 +17,15 @@ import {
   TrendingDown,
   AlertTriangle,
   CheckCircle,
-  Calendar,
   Target,
   PieChart,
   BarChart3,
   Download,
-  Upload,
   Settings,
   Edit
 } from "lucide-react";
 
 export default function BudgetPage() {
-  const [selectedPeriod, setSelectedPeriod] = useState("fy2024");
-  const [selectedCategory, setSelectedCategory] = useState("all");
-
   const budgetData = [
     { 
       category: "Office Supplies", 

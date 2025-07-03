@@ -10,12 +10,10 @@ import {
   Search, 
   Bell, 
   Settings, 
-  LogOut,
   ShoppingCart,
   Users,
   Package,
   DollarSign,
-  TrendingUp,
   FileText,
   Calendar,
   Home

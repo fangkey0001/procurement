@@ -14,7 +14,6 @@ import {
   ShoppingCart,
   Users,
   Package,
-  FileText
 } from "lucide-react";
 
 export function QuickStats() {

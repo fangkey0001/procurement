@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import ProcurementLayout from "@/components/procurement/ProcurementLayout";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -17,14 +16,11 @@ import {
   TrendingUp,
   TrendingDown,
   BarChart3,
-  PieChart,
   LineChart,
   Target,
   DollarSign,
   Users,
   Package,
-  Clock,
-  Filter,
   Search,
   Eye,
   Share,
@@ -33,9 +29,6 @@ import {
 } from "lucide-react";
 
 export default function ReportsPage() {
-  const [selectedPeriod, setSelectedPeriod] = useState("last-30-days");
-  const [selectedReport, setSelectedReport] = useState("spending");
-
   const reportTemplates = [
     {
       id: 1,
